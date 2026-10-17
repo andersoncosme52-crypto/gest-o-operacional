@@ -21,6 +21,7 @@ st.markdown(
 # =========================================================================
 conn = st.connection("postgresql+pg8000", type="sql")
 
+
 # Inicialização automática das tabelas na Nuvem
 with conn.session as session:
     session.execute("CREATE TABLE IF NOT EXISTS servidores (nome TEXT, rack TEXT, ip TEXT, localidade TEXT);")
