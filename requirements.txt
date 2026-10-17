@@ -1,5 +1,4 @@
 pandas
 plotly
 openpyxl
-sqlalchemy
-psycopg[binary]
+pg8000
